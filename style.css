@@ -3,6 +3,7 @@ body {
     background: #36393e;
     background-image: linear-gradient(#4d4d4d .1em, transparent .1em), linear-gradient(90deg, #4d4d4d.1em, transparent .1em);
     background-size: 3em 3em;
+    overflow: hidden;
 }
 
 @font-face {
@@ -15,10 +16,11 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    overflow: hidden;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0;
 }
 
 .screen button {
@@ -31,6 +33,7 @@ body {
     cursor: pointer;
     transition: 0.1s;
     display: block;
+    margin: auto;
     margin-top: 5vh;
 }
 
@@ -43,4 +46,13 @@ body {
     font-size: 4vh;
     font-family: vcr-osd;
     text-shadow: white .1vh .1vh 0;
+}
+
+#select-gamemode {
+    display: none;
+}
+
+#canvas1 {
+    position: absolute;
+    display: none;
 }
