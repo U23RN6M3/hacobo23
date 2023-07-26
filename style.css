@@ -1,0 +1,46 @@
+body {
+    padding: 0;
+    background: #36393e;
+    background-image: linear-gradient(#4d4d4d .1em, transparent .1em), linear-gradient(90deg, #4d4d4d.1em, transparent .1em);
+    background-size: 3em 3em;
+}
+
+@font-face {
+    font-family: vcr-osd;
+    src: url("Fonts/VCR_OSD_MONO.ttf");
+}
+
+.screen {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen button {
+    background: #777777;
+    width: 40vh;
+    height: 10vh;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: #cccccc .5vh .5vh 0 0;
+    cursor: pointer;
+    transition: 0.1s;
+    display: block;
+    margin-top: 5vh;
+}
+
+.screen button:active {
+    transform: translate(.5vh, .5vh);
+    box-shadow: white 0 0 0 0;
+}
+
+.screen h1 {
+    font-size: 4vh;
+    font-family: vcr-osd;
+    text-shadow: white .1vh .1vh 0;
+}
